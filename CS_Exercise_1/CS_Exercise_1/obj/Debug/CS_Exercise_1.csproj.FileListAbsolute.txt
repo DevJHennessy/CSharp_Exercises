@@ -1,0 +1,6 @@
+C:\Users\Student\Documents\GitHub\CSharp_Exercises\CS_Exercise_1\CS_Exercise_1\bin\Debug\CS_Exercise_1.exe.config
+C:\Users\Student\Documents\GitHub\CSharp_Exercises\CS_Exercise_1\CS_Exercise_1\bin\Debug\CS_Exercise_1.exe
+C:\Users\Student\Documents\GitHub\CSharp_Exercises\CS_Exercise_1\CS_Exercise_1\bin\Debug\CS_Exercise_1.pdb
+C:\Users\Student\Documents\GitHub\CSharp_Exercises\CS_Exercise_1\CS_Exercise_1\obj\Debug\CS_Exercise_1.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\GitHub\CSharp_Exercises\CS_Exercise_1\CS_Exercise_1\obj\Debug\CS_Exercise_1.exe
+C:\Users\Student\Documents\GitHub\CSharp_Exercises\CS_Exercise_1\CS_Exercise_1\obj\Debug\CS_Exercise_1.pdb
