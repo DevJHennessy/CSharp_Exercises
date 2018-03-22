@@ -145,12 +145,10 @@ namespace CS_Exercise_6
             //        Console.WriteLine(words.IndexOf(word));
             //        break;
             //    }
-            //    else if (word != checkWords)
+            //    else
             //    {
-            //        //continue;
             //        Console.WriteLine("That word was not in the list, or perhaps it started with a lowercase instead of an uppercase.");
-            //        //continue;
-            //       // break;
+            //        //break;
 
             //    }
             //}
@@ -162,21 +160,26 @@ namespace CS_Exercise_6
             //Create a loop that iterates through the loop and then displays the indices of the 
             //array that contain matching text on the screen.
 
-            List<string> words = new List<string>() { "Joy", "To", "The", "World", "Joy" };
-            Console.WriteLine("Search for text in the list. Each word starts with a capital.");
-            string checkWords = Console.ReadLine();
+            //List<string> words = new List<string>() { "Joy", "To", "The", "World", "Joy", "The", "Roll" };
+            //Console.WriteLine("Search for text in the list. Each word starts with a capital.");
+            //string checkWords = Console.ReadLine();
 
-            foreach (var word in words)
-            {
 
-                if (word == checkWords)
-                {
-                    Console.WriteLine(words.IndexOf(word));
+            //for (int i = 0; i < words.Count; i++)
+            //{
+            //    var word = words.ElementAt(i);
 
-                }
+            //    if (word == checkWords)
+            //    {
+            //        Console.WriteLine(i);
+            //        Console.ReadLine();
 
-            }
-            Console.ReadLine();
+            //    }
+
+            //}
+
+
+
 
             //12.Add code to that above loop that tells a user if they put in text that isn’t in the List.
 
@@ -203,7 +206,28 @@ namespace CS_Exercise_6
             //}
             //Console.ReadLine();
 
-            //13.Create a List of strings that has at least two identical strings in the List. Create a foreach loop that evaluates each item in the list, and displays a message showing the string and  whether or not it has already appeared in the list.
+            //13.Create a List of strings that has at least two identical strings in 
+            //the List. Create a foreach loop that evaluates each item in the list,
+            //and displays a message showing the string and  whether or not it has
+            //already appeared in the list.
+
+            List<string> words = new List<string>() { "Joy", "To", "The", "World", "Joy" };
+            var distinct = new HashSet<string>();
+            var duplicate = new HashSet<string>();
+
+            foreach (var word in words)
+            {
+                if (!distinct.Add(word))
+                {
+                    Console.WriteLine(distinct);
+                }
+                else if (duplicate.Add(word))
+                {
+                    Console.WriteLine(word);
+                }
+
+            }
+            Console.ReadLine();
         }
     }
 }
