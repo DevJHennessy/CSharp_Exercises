@@ -30,6 +30,11 @@ namespace CS_Exercise_11
             int userInput = Convert.ToInt32(Console.ReadLine());
             int userInput2 = Convert.ToInt32(Console.ReadLine());
 
+            if (userInput = Convert.ToInt32(Console.ReadLine())
+            {
+
+            }
+
 
             Console.WriteLine(mathoperation.MatherOperation(userInput, userInput2));
             Console.ReadLine();
