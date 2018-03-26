@@ -211,19 +211,23 @@ namespace CS_Exercise_6
             //and displays a message showing the string and  whether or not it has
             //already appeared in the list.
 
-            List<string> words = new List<string>() { "Joy", "To", "The", "World", "Joy" };
-            var distinct = new HashSet<string>();
+            List<string> words = new List<string>() { "Joy", "To", "The", "World", "Joy", "World" };
             var duplicate = new HashSet<string>();
 
             foreach (var word in words)
             {
-                if (!distinct.Add(word))
+                if (!duplicate.Add(word))
                 {
-                    Console.WriteLine(distinct);
+                    Console.WriteLine("{0} - This word has already appeard in the list.", word);
                 }
                 else if (duplicate.Add(word))
                 {
                     Console.WriteLine(word);
+                }
+                else
+                {
+                    Console.WriteLine(word);
+
                 }
 
             }
