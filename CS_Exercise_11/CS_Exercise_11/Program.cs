@@ -24,24 +24,29 @@ namespace CS_Exercise_11
 
             //int userInput = Convert.ToInt32(Console.ReadLine());
 
+
+
             Console.WriteLine("Please enter two numbers. The second number is optional.");
-            //Console.ReadLine();
-
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            int userInput2 = Convert.ToInt32(Console.ReadLine());
-
-            if (userInput = Convert.ToInt32(Console.ReadLine())
-            {
-
-            }
 
 
-            Console.WriteLine(mathoperation.MatherOperation(userInput, userInput2));
+            //if (!string.IsNullOrEmpty(userInput2.ToString()))
+
+            int number = 0;
+            int number2 = 0;
+            bool userInput = int.TryParse(Console.ReadLine(), out number);
+            bool userInput2 = int.TryParse(Console.ReadLine(), out number2);
+
+            //int userInput = Convert.ToInt32(Console.ReadLine());
+            //int userInput2 = Convert.ToInt32(Console.ReadLine());
+
+
+
+            Console.WriteLine("{0} + {1} + 10 equals {2}.", number, number2, mathoperation.MatherOperation(number, number2));
             Console.ReadLine();
 
 
             //4. Call the method in the class, passing in the one or two numbers entered.
-    
+
 
             //5. Try various combinations of numbers on the code, including having no second number.
         }
